@@ -1000,7 +1000,23 @@ ul {
 }
 
 .navbar {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #b6393f, #8b2025);
     padding: 10px 20px;
     /* color: white; */
+}
+
+.btn-orange {
+    background: #ffffff;
+    color: linear-gradient(90deg, #b6393f 15.16%, #8b2025 57.91%);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 1000;
+}
+
+.btn-orange:hover {
+    background: #ffffff;
+    color: linear-gradient(90deg, #b6393f 15.16%, #8b2025 57.91%);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 1000;
 }
