@@ -1,0 +1,254 @@
+body {
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+.suggest {
+    display: none;
+}
+
+#popup_box {
+    display: none;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+}
+
+.popScroll {
+    position: absolute;
+    z-index: 10;
+    top: 95px;
+    left: 0px;
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.subscribe-widget .select-form {
+    font-size: 13px;
+    color: #787676;
+    padding-left: 6px;
+    margin-top: 7px;
+    width: 270px;
+    border: 1px solid #e0e0e0;
+    padding: 9px 0 9px 5px;
+    line-height: 25px;
+}
+
+.popup {
+    z-index: 10;
+    width: 450px;
+    /* height: 480px !important; */
+    padding-bottom: 5px;
+    top: 14px;
+    position: relative;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+    transform-origin: top center;
+    animation: iconosani 1.2s forwards;
+}
+
+.popScroll h1 {
+    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    height: 66px;
+    position: relative;
+    color: #6e3306;
+    font: 26px / 63px sans-serif;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background: #ffffff;
+    bottom: 0px;
+    top: 0px;
+}
+
+
+.popScroll form {
+    margin: 10px auto;
+}
+
+.subscribe-widget .email-form {
+    font-size: 13px;
+    color: #999999;
+    padding-left: 6px;
+    margin-top: 7px;
+    width: 270px;
+    border: 1px solid #e0e0e0;
+    padding: 5px 0 5px 5px;
+    line-height: 25px;
+}
+
+.subscribe-widget .button {
+    background: #0e2132;
+    padding: 6px 15px;
+    color: #fff;
+    border: none;
+    line-height: 25px;
+    margin-left: 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popScroll p {
+    padding: 1px 5px;
+    font-family: "Open Sans";
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ribbon.top-left {
+    top: -3px;
+    left: -7px;
+}
+
+.ribbon {
+    position: absolute;
+    z-index: 100;
+    width: 124px;
+    height: 111px;
+    overflow: hidden;
+}
+
+.ribbon.top-left.ribbon-primary>small {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 65%;
+    color: #8B2025;
+    background-color: white;
+    transform: rotate(-45deg);
+    box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.5);
+    top: 16px;
+    left: -27px;
+}
+
+.ribbon.top-left.ribbon-primary>small:before,
+.ribbon.top-left.ribbon-primary>small:after {
+    position: absolute;
+    content: " ";
+}
+
+.ribbon.top-left.ribbon-primary>small:before {
+    left: 0;
+}
+
+.ribbon.top-left.ribbon-primary>small:after {
+    right: 0;
+}
+
+.ribbon.top-left.ribbon-primary>small:before,
+.ribbon.top-left.ribbon-primary>small:after {
+    bottom: -3px;
+    border-top: 3px solid #0e2132;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.popup .all-close-icon {
+    position: absolute;
+    font-size: 20px;
+    color: #8B2025;
+    text-decoration: none;
+    cursor: pointer;
+    left: 423px;
+    border: none;
+    z-index: 9;
+    top: 0px;
+}
+
+.popup .all-close-icon:hover {
+    color: #243757;
+}
+
+.p-margin {
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .popup {
+        height: 450px;
+        width: 340px;
+    }
+
+    .popup .all-close-icon {
+        position: absolute !important;
+        font-size: 20px;
+        color: #8B2025;
+        text-decoration: none;
+        cursor: pointer;
+        left: 305px;
+        border: none;
+        z-index: 9;
+        top: 0px;
+    }
+
+    .popup .all-closee-icon {
+        position: absolute !important;
+        font-size: 18px;
+        color: #8B2025;
+        text-decoration: none;
+        cursor: pointer;
+        left: 286px;
+        border: none;
+        z-index: 9;
+        top: 0px;
+    }
+
+    .popScroll h1 {
+        height: 40px;
+        font: 18px/40px sans-serif;
+    }
+
+    .subscribe-widget .email-form {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .popup {
+        width: 350px;
+        height: 480px;
+    }
+
+    .popScroll h1 {
+        height: 40px;
+        font: 18px/40px sans-serif;
+    }
+
+    .subscribe-widget .email-form {
+        width: 210px;
+    }
+}
+
+input.email-form:active,
+input.email-form:focus {
+    animation: fade 0.55s ease-in;
+}
+
+@keyframes fade {
+    0% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    66% {
+        box-shadow: 0 0 0 10px #be3b3b, 0 0 0
+    }
+}
+
+#suggestions {
+    height: auto;
+    border: 1px solid #e7e7e7;
+    text-align: left;
+    width: 269px;
+    margin-left: 91px;
+    padding: 6px;
+    margin-top: 2px;
+}
