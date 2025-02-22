@@ -40,13 +40,16 @@ function validateBasicDetails() {
     return !hasError;
 }
 
-function validateForm() {
+function validateForm(event) {
     var isBasicDetailsValid = validateBasicDetails();
     if (isBasicDetailsValid) {
         // Form validation passed (this part can be further extended if needed)
-        alert("Form is valid. You can submit the data.");
-        closePopup();  // Close the popup after validation (optional)
+        // alert("Form is valid. You can submit the data.");
+        // closePopup();  // Close the popup after validation (optional)
+        // event.preventDefault();
+        // window.location.href = "https://samattvaschool.netlify.app/thankyou.html";
     }
+    console.log("form filled");
 }
 
 function initAutocomplete() {
